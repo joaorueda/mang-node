@@ -2,16 +2,22 @@
   "name": "secao1",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
+    "test:staged":"jest",
     "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.9.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.9.3",    
+    "cross-env": "^7.0.3",
     "eslint": "^8.57.1",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
@@ -19,9 +25,11 @@
     "eslint-plugin-standard": "^4.1.0",
     "git-commit-msg-linter": "^5.0.8",
     "husky": "^9.1.7",
+    "install": "^0.13.0",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.10",
     "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
   "dependencies": {
